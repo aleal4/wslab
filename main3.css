@@ -1,0 +1,989 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  font-family: "Dosis", arial, sans-serif;
+  background-color: #00539cff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  height: 70px;
+  margin: auto;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav li {
+  padding: 1rem 1.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.5rem;
+  transition: border-color 0.5s;
+  align-items: center;
+}
+
+.main-nav a:hover {
+  border-color: #ccc;
+}
+
+.main-nav a.current {
+  border-color: #ffbc00;
+}
+
+.main-nav img {
+  width: 40px;
+}
+
+.box-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+}
+
+.research-content {
+  text-align: center;
+  margin: 0 3rem 0 2rem;
+}
+
+.research-content h4 {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.research-content h6 {
+  font-size: 1.4rem;
+}
+
+.mosquito-image {
+  display: block;
+  height: 144px;
+  margin-right: 6rem;
+}
+
+.mosquito-image img {
+  display: block;
+  margin: auto;
+  position: relative;
+  animation: animate1 3s forwards 1s ease;
+  top: 0;
+  left: 0;
+}
+
+@keyframes animate1 {
+  25% {
+    top: -250px;
+    left: -600px;
+    transform: rotate(20deg);
+  }
+  50% {
+    top: 180px;
+    left: -370px;
+    transform: rotate(0deg);
+  }
+  75% {
+    top: 400px;
+    left: 30px;
+    transform: rotate(270deg);
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.profile-content {
+  text-align: center;
+  margin-left: 4rem;
+}
+
+.profile-content h1 {
+  font-size: 3.3rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.profile-content h3 {
+  font-size: 2rem;
+}
+
+.profile-content span {
+  font-style: italic;
+}
+
+.profile-content p {
+  font-size: 1.5rem;
+}
+
+.profile-content a {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+  display: inline-block;
+  padding: 0.8rem 4rem;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-light a {
+  margin: auto;
+}
+
+.btn-light:hover {
+  background: #ffbc00;
+}
+
+.profile-content a {
+  text-decoration: none;
+}
+
+.profile img {
+  display: block;
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* Research */
+.research-home h3 {
+  margin-top: 10px;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.research-profile {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.lab-image {
+  margin: 1rem 0;
+}
+
+.lab-image img {
+  display: block;
+  margin: auto;
+  width: 350px;
+  border-radius: 50%;
+}
+
+.research-info {
+  max-width: 900px;
+  margin: 3rem auto;
+  text-align: justify;
+}
+
+.video iframe {
+  display: block;
+  margin: auto;
+}
+
+.video figcaption {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.research-home {
+  margin-top: 0.5rem;
+}
+.publication-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  display: block;
+  margin: auto;
+}
+
+.publication-links a {
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+}
+
+.btn-pub {
+  display: block;
+  align-self: center;
+  background: #f4f4f4;
+  color: #333;
+  width: 200px;
+  padding: 0;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.btn-pub:hover {
+  background: #ffbc00;
+  box-shadow: 3px 3px rgb(22, 23, 46);
+}
+
+.lab-team h2 {
+  margin-top: 6rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.lab-team-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+}
+
+.lab-team-links a {
+  font-size: 1.4rem;
+}
+
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.mosquito {
+  margin-bottom: 2rem;
+}
+
+.lab-photo img {
+  display: block;
+  margin: auto;
+  width: 400px;
+  border-radius: 50%;
+}
+
+.info {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  line-break: 2rem;
+}
+
+.info h4 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  line-break: 2rem;
+}
+
+.info h5 {
+  font-size: 2.4rem;
+  margin-bottom: 0.2rem;
+  line-break: 2rem;
+}
+
+.info h6 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  line-break: 2rem;
+}
+
+@media (max-width: 815px) {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 760px;
+    height: 70px;
+    margin: 3px 10px;
+  }
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav ul li {
+    padding: 1rem 1.5rem;
+  }
+
+  .main-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+    align-items: center;
+    /* margin-top: 50px; */
+  }
+
+  .main-nav a:hover {
+    border-color: #ccc;
+  }
+
+  .main-nav a.current {
+    border-color: #ffbc00;
+  }
+
+  .main-nav img {
+    width: 40px;
+  }
+
+  .hero {
+    height: 760px;
+    margin-top: 100px;
+  }
+  .box-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+    position: relative;
+  }
+
+  .research-content {
+    text-align: center;
+    margin: 0 3rem 0 2rem;
+  }
+
+  .research-content h4 {
+    font-size: 3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .research-content h6 {
+    font-size: 1.4rem;
+  }
+
+  .mosquito-image {
+    display: block;
+    height: 144px;
+    margin-right: 6rem;
+  }
+
+  .mosquito-image img {
+    display: block;
+    margin: auto;
+    position: relative;
+    animation: animate1 3s forwards 1s ease;
+    top: 0;
+    left: 0;
+  }
+
+  @keyframes animate1 {
+    25% {
+      top: -250px;
+      left: -600px;
+      transform: rotate(20deg);
+    }
+    50% {
+      top: 180px;
+      left: -370px;
+      transform: rotate(0deg);
+    }
+    75% {
+      top: 400px;
+      left: 30px;
+      transform: rotate(270deg);
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+    }
+  }
+
+  .box-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+  }
+
+  .profile-content {
+    text-align: center;
+    margin-left: 4rem;
+  }
+
+  .profile-content h1 {
+    font-size: 3.3rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+  }
+
+  .profile-content h3 {
+    font-size: 2rem;
+  }
+
+  .profile-content span {
+    font-style: italic;
+  }
+
+  .profile-content p {
+    font-size: 1.5rem;
+  }
+
+  .profile-content a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .btn-light {
+    background: #f4f4f4;
+    color: #333;
+    display: inline-block;
+    padding: 0.8rem 4rem;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .btn-light a {
+    margin: auto;
+  }
+
+  .btn-light:hover {
+    background: #ffbc00;
+  }
+
+  .profile-content a {
+    text-decoration: none;
+  }
+
+  .profile img {
+    display: block;
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  /* Research */
+  .research-home h3 {
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .research-profile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .lab-image {
+    margin: 1rem 0;
+  }
+
+  .lab-image img {
+    display: block;
+    margin: auto;
+    width: 350px;
+    border-radius: 50%;
+  }
+
+  .research-info {
+    margin: 2rem 2rem 1rem 2rem;
+    text-align: justify;
+  }
+
+  .video iframe {
+    display: block;
+    margin: auto;
+  }
+
+  .video figcaption {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+  }
+
+  .research-home {
+    margin-top: 0.5rem;
+  }
+  .publication-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    display: block;
+    margin: auto;
+  }
+
+  .publication-links a {
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+  }
+
+  .btn-pub {
+    display: block;
+    align-self: center;
+    background: #f4f4f4;
+    color: #333;
+    width: 200px;
+    padding: 0;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .btn-pub:hover {
+    background: #ffbc00;
+  }
+
+  .lab-team h2 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .lab-team-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .profile-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .mosquito {
+    margin-bottom: 2rem;
+  }
+
+  .lab-photo img {
+    display: block;
+    margin: auto;
+    width: 400px;
+    border-radius: 50%;
+  }
+
+  .info {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    line-break: 2rem;
+  }
+
+  .info h4 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    line-break: 2rem;
+  }
+
+  .info h5 {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+    line-break: 2rem;
+  }
+
+  .info h6 {
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    line-break: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-nav .nav-logo {
+    display: none;
+  }
+
+  .hero {
+    height: 0rem;
+  }
+  .box-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 120px;
+  }
+
+  .research-content {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .research-content h4 {
+    font-size: 3rem;
+  }
+
+  .research-content h6 {
+    font-size: 1.4rem;
+  }
+
+  .mosquito-image {
+    height: 205px;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+  }
+
+  .mosquito-image img {
+    display: block;
+    margin: auto;
+    position: relative;
+    animation: animate1 3s forwards 1s ease;
+    top: 0;
+    left: 0;
+  }
+
+  @keyframes animate1 {
+    25% {
+      top: -400px;
+      left: 100px;
+      transform: rotate(25deg);
+    }
+    50% {
+      top: -150px;
+      left: -200px;
+      transform: rotate(270deg);
+    }
+    75% {
+      top: 400px;
+      left: 30px;
+    }
+    100% {
+      top: 0px;
+      left: 0px;
+    }
+  }
+
+  .box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-2 .profile {
+    margin: 1rem;
+  }
+
+  .profile-content {
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+
+  .profile img {
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .profile-content h1 {
+    font-size: 3.3rem;
+    text-align: center;
+  }
+  .profile-content h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .profile-content span {
+    font-style: italic;
+  }
+
+  .profile-content p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .profile-content a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn-light {
+    background: #f4f4f4;
+    color: #333;
+    display: inline-block;
+    padding: 0.8rem 4rem;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .btn-light a {
+    margin: auto;
+  }
+
+  .btn-light:hover {
+    background: #ffbc00;
+  }
+
+  .profile-content a {
+    text-decoration: none;
+  }
+
+  /* NavBar */
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 70px;
+  }
+
+  .main-nav .ucd-logo {
+    width: 50px;
+  }
+
+  .main-nav ul {
+    display: flex;
+  }
+
+  .main-nav li {
+    padding: 1rem 1.5rem;
+  }
+
+  .main-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s;
+    margin-top: 50px;
+  }
+
+  .main-nav a:hover {
+    border-color: #ccc;
+  }
+
+  .main-nav a.current {
+    border-color: #ffbc00;
+  }
+
+  /* Research */
+
+  .research-home h3 {
+    margin-top: 10px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .research-profile {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .lab-image {
+    margin: 20px 0px;
+  }
+  .lab-image img {
+    display: block;
+    margin: auto;
+    width: 350px;
+    border-radius: 50%;
+  }
+
+  .research-info {
+    margin: 15px;
+    text-align: justify;
+  }
+
+  .video iframe {
+    width: 340px;
+    height: 215px;
+    margin: auto;
+    display: block;
+  }
+
+  .video figcaption {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* Publication */
+
+  .publication-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    display: block;
+    margin: auto;
+  }
+
+  .publication-links a {
+    display: block;
+    text-align: center;
+  }
+
+  .btn-pub {
+    display: block;
+    align-self: center;
+    background: #f4f4f4;
+    color: #333;
+    width: 200px;
+    padding: 0;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 1rem;
+  }
+
+  .btn-pub:hover {
+    background: #ffbc00;
+  }
+
+  .lab-team h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .lab-team-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .lab-team-links a {
+    width: 150px;
+    font-size: 1rem;
+  }
+
+  .profile-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mosquito {
+    margin: 2rem 0 2rem 0;
+  }
+
+  .mosquito img {
+    display: block;
+    margin: auto;
+    width: 100px;
+  }
+
+  .lab-photo img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .info h4 {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .info h5 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .info h6 {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+  }
+}
